@@ -1,0 +1,1 @@
+cipher = lambda x, n: x.translate(__import__("string").maketrans(("".join([chr(x) for x in list(range(97, 123))+list(range(65, 91))])), str((lambda x, n: (x[-n:] + x[0:len(x)-n]))(("".join([chr(x) for x in list(range(97, 123))+list(range(65, 91))])), n))))
