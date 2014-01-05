@@ -1,0 +1,3 @@
+v=lambda t,k,d=0:''.join(chr((ord(c)%32-1+(ord(b)-65)*[1,-1][d])%26+65+32*c.islower())if c.isalpha()else c for c,b in zip(t,k*(len(t)//len(k)+1)))
+
+# http://www.reddit.com/r/tinycode/comments/1tzts3/code_golf_vigen%C3%A8re_cipher_python/
